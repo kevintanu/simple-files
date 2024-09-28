@@ -1,0 +1,56 @@
+# Cheat-sheet of various tech
+
+git:
+- switching branch on remote server:
+  1. `git fetch`
+  2. `git branch -v -a`
+  3. `git switch BRANCH_NAME` without remote and origin
+- install package from git
+- `git checkout BRANCH_NAME` to switch branch on local
+
+vcpkg:
+- `vcpkg new --application` to initialize
+- `vcpkg add port PACKAGE_NAME` to add package
+
+golang:
+- `go build -o mydll.dll -buildmode=c-shared main.go` to build main.go file as shared library
+
+elixir:
+- `iex.bat --werl -S mix phx.server` starting phoenix server with erlang prompt
+- `mix ecto.rollback --step 2` to rollback using ecto 
+- `mix ecto.migrate --step 2` to migrate using ecto
+- `mix run priv/repo/seeds.exs` to run seeder
+- restarting genserver:
+  1. `pid = Process.whereis(ATOM)`
+  2. `res = Process.exit(pid, :shutdown)`
+
+python:
+- initializing python project
+  1. use Anaconda to generate Python env
+  2. `python -m venv venv` to create virtual env
+  3. `source venv/bin/activate` or WIN `venv/Scripts/activate` to activate venv
+  4. `pip install poetry` install poetry to handle dependencies
+- `pip freeze > requirements.txt` to export dependencies list, better use poetry, or manually make your own requirements.txt
+- `pip install -r /path/to/requirements.txt` to install dependencies
+
+conda:
+- `conda list -e > requirements.txt` to create requirements.txt from conda
+
+node:
+- `npm install git+https://github.com/USERNAME/REPO_NAME.git#HASH` install from git
+
+SSH:
+- public key: a key text that is needed to be put on remote server
+- private key: a key text that is on local machine, and ONLY you should have it, to authenticate to server.
+- use `ed25519` encryption as it's the latest tech
+
+bash:
+- `less /etc/passwd` to list user
+- `groups` to list group
+
+Unity:
+- always use Power of Two textures
+
+C#:
+- `virtual` a method that can be overridden
+- `abstract` a method that SHOULD be overridden
