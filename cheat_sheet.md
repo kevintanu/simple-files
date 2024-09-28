@@ -7,6 +7,8 @@ git:
   3. `git switch BRANCH_NAME` without remote and origin
 - install package from git
 - `git checkout BRANCH_NAME` to switch branch on local
+- `git submodule -b BRANCH_NAME add https://github.com/username/repo.git path/to/submodule` this is how to add submodule and use specific branch
+- `git submodule update --init --recursive` to Initialize and fetch the contents of the submodule
 
 vcpkg:
 - `vcpkg new --application` to initialize
