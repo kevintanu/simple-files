@@ -11,6 +11,8 @@
 - Always make a health check
 - Always make a server git commit check
 - Always make admin token bypass to test
+- Make Maintenance mode
+- Make a cron to periodically update static data from server
 
 # Recommended Tools:
 - Imgui - desktop apps
