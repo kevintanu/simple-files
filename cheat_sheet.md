@@ -38,6 +38,7 @@ python:
 
 django:
 - `python manage.py migrate APP_NAME TARGET` can be used to migrate (/ rollback with using previous TARGET version)
+- `python manage.py makemigrations` run after make model in models.py to generate migrations
 
 conda:
 - `conda list -e > requirements.txt` to create requirements.txt from conda
