@@ -72,3 +72,7 @@ docker:
 
 apache:
 - `var/log/apache/` directory for apache log: `access.log`, `error.log`
+- django error will show on that file
+
+github:
+- `.github/workflows/FILE_NAME.yml` this is the location of workflow if you want to use github workflow
