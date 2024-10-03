@@ -54,6 +54,11 @@ SSH:
 bash:
 - `less /etc/passwd` to list user
 - `groups` to list group
+- `chmod -R 777 <file or directory>`
+  - R is recursive
+  - Read (4), Write (2), and Execute (1) permissions to the owner.
+  - Read (4), Write (2), and Execute (1) permissions to the group.
+  - Read (4), Write (2), and Execute (1) permissions to everyone else.
 
 Unity:
 - always use Power of Two textures
@@ -61,3 +66,6 @@ Unity:
 C#:
 - `virtual` a method that can be overridden
 - `abstract` a method that SHOULD be overridden
+
+docker:
+- `docker exec -it <container_name_or_id> /bin/bash` to go inside the container
