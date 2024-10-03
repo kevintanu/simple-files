@@ -69,3 +69,6 @@ C#:
 
 docker:
 - `docker exec -it <container_name_or_id> /bin/bash` to go inside the container
+
+apache:
+- `var/log/apache/` directory for apache log: `access.log`, `error.log`
