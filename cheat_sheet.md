@@ -74,6 +74,7 @@ docker:
 apache:
 - `var/log/apache/` directory for apache log: `access.log`, `error.log`
 - django error will show on that file
+- default user of apache in ubuntu is `www-data` and other usually `nobody` or `apache`, this is important to note because if you use Docker container with Dockerfile using mkdir, the default user of that directory will be `root`, that's why you need to either change the permission on the directory, or change the user
 
 github:
 - `.github/workflows/FILE_NAME.yml` this is the location of workflow if you want to use github workflow
@@ -81,7 +82,7 @@ github:
 gcloud:
 - Google Cloud Run use docker container, that means it supports older runtime such as Python 2.7
 - Cloud Run default port is 8080
-- Service account need permission: Cloud Run Admin, Artifact Registry Writer, Viewer, 
+- Service account need permission: Cloud Run Admin, Artifact Registry Writer, Viewer, Storage Admin, Service Account User
 
 bitnami:
 - Give SSH access to another person, such as a customer:
