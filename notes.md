@@ -17,3 +17,7 @@
 # Recommended Tools:
 - Imgui - desktop apps
 - Flutter - mobile apps
+
+# Abbreviations:
+- CIDR: Classless Inter-Domain Routing
+- CRTP: Curiously Recurring Template Pattern
