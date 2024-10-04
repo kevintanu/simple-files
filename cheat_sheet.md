@@ -59,6 +59,7 @@ bash:
   - Read (4), Write (2), and Execute (1) permissions to the owner.
   - Read (4), Write (2), and Execute (1) permissions to the group.
   - Read (4), Write (2), and Execute (1) permissions to everyone else.
+- `id USERNAME` check user
 
 Unity:
 - always use Power of Two textures
@@ -76,3 +77,25 @@ apache:
 
 github:
 - `.github/workflows/FILE_NAME.yml` this is the location of workflow if you want to use github workflow
+
+gcloud:
+- Google Cloud Run use docker container, that means it supports older runtime such as Python 2.7
+- Cloud Run default port is 8080
+- Service account need permission: Cloud Run Admin, Artifact Registry Writer, Viewer, 
+
+bitnami:
+- Give SSH access to another person, such as a customer:
+  - generate new SSH key pair, use puttygen (Windows) or ssh-keygen (Linux / macOS)
+  - login as bitnami user
+  - `sudo useradd -s /bin/bash -o -u `id -u` -g `id -g` USERNAME` this is alias for bitnami account
+  - configure SSH access:
+    ```
+    sudo mkdir ~USERNAME/
+    sudo cp -rp ~bitnami/.ssh ~USERNAME/
+    sudo cp -rp ~bitnami/.bashrc ~USERNAME/
+    sudo cp -rp ~bitnami/.profile ~USERNAME/
+    ```
+  - `cat USERNAME.pub >> /home/USERNAME/.ssh/authorized_keys` add public key to authorized_keys
+  - `sudo usermod -aG bitnami-admins USERNAME` allow execute command as root
+  - `sudo userdel USERNAME -f` to delete user
+
