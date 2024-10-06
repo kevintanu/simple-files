@@ -8,3 +8,6 @@ With no exported symbols .lib file is not created. (In case of shared libraries,
 https://stackoverflow.com/questions/64088046/missing-lib-file-when-creating-shared-library-with-cmake-and-visual-studio-2019
 
 - Can't have function implementation in .h files if included in multiple files, duplicate implementation
+
+- Unresolved external symbol
+  - try forward declaration, also check again for symbol that's not there when compiling
