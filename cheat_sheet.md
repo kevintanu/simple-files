@@ -7,7 +7,7 @@ git:
   3. `git switch BRANCH_NAME` without remote and origin
 - `git checkout BRANCH_NAME` to switch branch on local
 - install package from git
-  - `git submodule -b BRANCH_NAME add https://github.com/username/repo.git path/to/submodule` this is how to add submodule and use specific branch
+  - `git submodule add -b BRANCH_NAME https://github.com/username/repo.git path/to/submodule` this is how to add submodule and use specific branch
   - `git submodule update --init --recursive` to Initialize and fetch the contents of the submodule
 - `git show HEAD` to show current HEAD status
 
