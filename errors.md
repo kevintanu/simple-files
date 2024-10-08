@@ -9,5 +9,6 @@ https://stackoverflow.com/questions/64088046/missing-lib-file-when-creating-shar
 
 - Can't have function implementation in .h files if included in multiple files, duplicate implementation
 
-- Unresolved external symbol
+- Unresolved external symbol / Unknown override specifier
   - try forward declaration, also check again for symbol that's not there when compiling
+  - mostly because circular dependencies
