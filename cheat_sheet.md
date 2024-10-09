@@ -100,3 +100,5 @@ bitnami:
   - `sudo usermod -aG bitnami-admins USERNAME` allow execute command as root
   - `sudo userdel USERNAME -f` to delete user
 
+chrome:
+- `chrome://inspect/#devices` link to open device inspector in browser
