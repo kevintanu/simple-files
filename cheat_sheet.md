@@ -102,3 +102,6 @@ bitnami:
 
 chrome:
 - `chrome://inspect/#devices` link to open device inspector in browser
+
+flask:
+- `flask --app main run --debug` command to run flask app
