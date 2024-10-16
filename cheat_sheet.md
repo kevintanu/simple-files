@@ -105,3 +105,7 @@ chrome:
 
 flask:
 - `flask --app main run --debug` command to run flask app
+
+laravel:
+- `php artisan make:migration create_users_table` to generate migration
+- `php artisan migrate:rollback --step=1` to rollback with step
