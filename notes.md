@@ -2,7 +2,7 @@
 
 - PHP, Python, Ruby, Java are all blocking, scripting programming language
 - By default, nodejs and golang are non-blocking
-- prefer golang for webserver
+- prefer golang / elixir for webserver
 - use `Redis Sorted Set` for game leaderboard, it's fast
 - always think of Operating System
 - try to fit your app on HTML5, which is included in all superapps
@@ -13,6 +13,10 @@
 - Always make admin token bypass to test
 - Make Maintenance mode
 - Make a cron to periodically update static data from server
+- Make a checksum or CSRF to prevent hitting api not from your app
+- make CI CD
+- make static data system
+- make auto patcher for static data
 
 # Recommended Tools:
 - Imgui - desktop apps
