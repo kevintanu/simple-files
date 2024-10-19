@@ -81,7 +81,7 @@ github:
 
 gcloud:
 - Google Cloud Run use docker container, that means it supports older runtime such as Python 2.7
-- Cloud Run default port is 8080
+- Cloud Run default port is 8080, it's automatically setup in cloud run, so we should remove the environment variables for PORT
 - Service account need permission: Cloud Run Admin, Artifact Registry Writer, Viewer, Storage Admin, Service Account User
 
 bitnami:
@@ -99,6 +99,12 @@ bitnami:
   - `cat USERNAME.pub >> /home/USERNAME/.ssh/authorized_keys` add public key to authorized_keys
   - `sudo usermod -aG bitnami-admins USERNAME` allow execute command as root
   - `sudo userdel USERNAME -f` to delete user
+- Start or Stop Service
+  - `sudo /opt/bitnami/ctlscript.sh status` get service status
+  - `sudo /opt/bitnami/ctlscript.sh start` start all service
+  - `sudo /opt/bitnami/ctlscript.sh restart service name` restart service
+  - `sudo /opt/bitnami/ctlscript.sh stop` stop all service
+  - `sudo /opt/bitnami/ctlscript.sh restart` restart all service
 
 chrome:
 - `chrome://inspect/#devices` link to open device inspector in browser
