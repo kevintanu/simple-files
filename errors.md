@@ -16,3 +16,9 @@ https://stackoverflow.com/questions/64088046/missing-lib-file-when-creating-shar
 
 - initial value of reference to non-const must be an lvalue
   - comes from when you are trying to bind a non-const reference to a temporary object. trying to assign a temporary object, constructed inside some function, to non const reference. `lvalue` = existing object in memory.`rvalue` = temporary non existing object
+
+- a designator cannot be used with a non-aggregate type
+  - your class / struct has a member that have a constructor, so your class needs to have constructor. implicitly, the compiler add default constructor, so you can't use designator
+
+- attempting to reference a deleted function / (declared implicitly) cannot be referenced -- it is a deleted function
+  - you make a constructor, but by the nature of constructor, it has to be copied. one of the member of your class have a deleted copy function, so it can't be copied. Which implicitly also delete the class copy function
