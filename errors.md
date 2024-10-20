@@ -16,6 +16,7 @@ https://stackoverflow.com/questions/64088046/missing-lib-file-when-creating-shar
 
 - initial value of reference to non-const must be an lvalue
   - comes from when you are trying to bind a non-const reference to a temporary object. trying to assign a temporary object, constructed inside some function, to non const reference. `lvalue` = existing object in memory.`rvalue` = temporary non existing object
+  - `i = 10` i is lvalue, 10 is rvalue
 
 - a designator cannot be used with a non-aggregate type
   - your class / struct has a member that have a constructor, so your class needs to have constructor. implicitly, the compiler add default constructor, so you can't use designator
