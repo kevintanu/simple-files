@@ -12,11 +12,13 @@
 - Always make a server git commit check
 - Always make admin token bypass to test
 - Make Maintenance mode
-- Make a cron to periodically update static data from server
+- Make a cron to periodically update static data from server / auto patcher
 - Make a checksum or CSRF to prevent hitting api not from your app
 - make CI CD
 - make static data system
-- make auto patcher for static data
+- make a job scheduler system, which only run ON user input
+- insert logging system
+- insert monitoring system such as grafana (probably also handle logging)
 
 # Recommended Tools:
 - Imgui - desktop apps
