@@ -115,3 +115,7 @@ flask:
 laravel:
 - `php artisan make:migration create_users_table` to generate migration
 - `php artisan migrate:rollback --step=1` to rollback with step
+
+redis:
+- `TTL key` check remaining expiration
+- `EXPIRE key seconds` to set expiration of keys
