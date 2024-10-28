@@ -52,6 +52,17 @@ SSH:
 - use `ed25519` encryption as it's the latest tech
 
 bash:
+- `top` to see CPU and RAM usage
+- `mpstat` to see brief CPU usage
+- `free -h` to see RAM usage
+- `df -h` to see free disk space
+- `ss -tuln` to see used port
+- `lsof -i -P -n`
+  - -i: Show network files.
+  - -P: Display ports numerically (avoids service name resolution).
+  - -n: Display IP addresses numerically (avoids DNS lookups).
+- `nc -zv 127.0.0.1 PORT_NUMBER` check specific port number
+- `fuser -n tcp PORT_NUMBER` check process using specific port
 - `less /etc/passwd` to list user
 - `groups` to list group
 - `chmod -R 777 <file or directory>`
@@ -69,6 +80,10 @@ C#:
 - `abstract` a method that SHOULD be overridden
 
 docker:
+- `docker images` list docker images
+- `docker system prune` 
+- `docker stats --no-stream --format "table {{.Name}}\t{{.MemUsage}}"` check docker RAM usage
+- `docker stats --no-stream --format "table {{.Name}}\t{{.CPUPerc}}"` check docker CPU usage
 - `docker exec -it <container_name_or_id> /bin/bash` to go inside the container
 
 apache:

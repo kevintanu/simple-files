@@ -21,6 +21,8 @@
 - insert monitoring system such as grafana (probably also handle logging)
 - add rate limit, try using Redis SETNX
 - Add API versioning
+- Add timer check on API call
+- Add SQL query monitoring
 
 # Game
 - Health check
