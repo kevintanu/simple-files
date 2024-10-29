@@ -11,7 +11,6 @@
 - Health check
 - Add server git commit check
 - Always make admin token bypass to test
-- Maintenance mode
 - Make a cron to periodically update static data from server / auto patcher
 - Make a checksum or CSRF to prevent hitting api not from your app
 - make CI CD
@@ -23,6 +22,11 @@
 - Add API versioning
 - Add timer check on API call
 - Add SQL query monitoring
+- Add API doc & README
+- Register & Login
+- Add Dashboard
+  - Add reset data
+  - Maintenance mode
 
 # Game
 - Health check
@@ -35,6 +39,8 @@
 - Analytics
 - Daily Login Bonus
 - Gacha
+- Disable Multiple Login
+- Register & Login
 
 # Recommended Tools:
 - Imgui - desktop apps
