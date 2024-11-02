@@ -16,6 +16,7 @@ vcpkg:
 - `vcpkg add port PACKAGE_NAME` to add package
 
 golang:
+- `go mod init github.com/USERNAME/MODULE_NAME` to initialize golang project
 - `go build -o mydll.dll -buildmode=c-shared main.go` to build main.go file as shared library
 
 elixir:
@@ -71,6 +72,12 @@ bash:
   - Read (4), Write (2), and Execute (1) permissions to the group.
   - Read (4), Write (2), and Execute (1) permissions to everyone else.
 - `id USERNAME` check user
+- `ls -la -R` list all files and directories, with detailed info (permission etc), include hidden files, recursive
+- `tree -a -L 2 -h` show directory contents, with hidden files, 2 level deep, with file sizes
+
+cmd:
+- `dir /a /s` list all files and directories, include hidden files, recursive
+- `tree /f` show all files
 
 Unity:
 - always use Power of Two textures
@@ -132,5 +139,16 @@ laravel:
 - `php artisan migrate:rollback --step=1` to rollback with step
 
 redis:
-- `TTL key` check remaining expiration
 - `EXPIRE key seconds` to set expiration of keys
+- `GET SET TYPE TTL DEL` simple operations
+
+SQL:
+- example LEFT JOIN query
+```
+SELECT column_name(s)
+FROM table1
+LEFT JOIN table2
+ON table1.column_name = table2.column_name;
+WHERE table1.id = table2.id
+ORDER BY table.field ASC/DESC
+```
