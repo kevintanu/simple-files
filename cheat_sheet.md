@@ -74,6 +74,19 @@ bash:
 - `id USERNAME` check user
 - `ls -la -R` list all files and directories, with detailed info (permission etc), include hidden files, recursive
 - `tree -a -L 2 -h` show directory contents, with hidden files, 2 level deep, with file sizes
+- copy
+  - `cp source_file target_directory/` basic
+  - `cp source_file target_directory/new_filename` rename
+  - `cp file1 file2 file3 target_directory/` multiple file
+  - `cp -r source_directory target_directory/` recursive
+  - `cp -a source_file target_directory/` preserve attribute
+  - `cp prefix_*.txt target_directory/` using wildcard
+- move
+  - basic, rename, multiple same as copy
+  - `mv source_directory new_directory_name` move or rename directory
+- remote copy
+  - `scp username@source_host:/path/to/source_file target_directory/` copy source from remote host to local
+  - `scp source_file username@target_host:/path/to/target_directory/` copy local file to remote
 
 cmd:
 - `dir /a /s` list all files and directories, include hidden files, recursive
@@ -151,4 +164,8 @@ LEFT JOIN table2
 ON table1.column_name = table2.column_name;
 WHERE table1.id = table2.id
 ORDER BY table.field ASC/DESC
+LIMIT limit
 ```
+
+Windows:
+- `alt-space Move` restore windows off screen
