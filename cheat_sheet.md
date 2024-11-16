@@ -46,6 +46,7 @@ conda:
 
 node:
 - `npm install git+https://github.com/USERNAME/REPO_NAME.git#HASH` install from git
+- `npm list -g --depth=0` list installed global packages
 
 SSH:
 - public key: a key text that is needed to be put on remote server
@@ -154,6 +155,7 @@ laravel:
 redis:
 - `EXPIRE key seconds` to set expiration of keys
 - `GET SET TYPE TTL DEL` simple operations
+- `redis-cli -h ADDRESS -p PORT`
 
 SQL:
 - example LEFT JOIN query
