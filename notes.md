@@ -18,7 +18,8 @@
 - make a job scheduler system, which only run ON user input
 - insert logging system
 - insert monitoring system such as grafana (probably also handle logging)
-- add rate limit, try using Redis SETNX
+- add rate limit / request lock, try using Redis SETNX
+- add impersonate system
 - Add API versioning
 - Add timer check on API call
 - Add SQL query monitoring
@@ -49,3 +50,8 @@
 # Abbreviations:
 - CIDR: Classless Inter-Domain Routing
 - CRTP: Curiously Recurring Template Pattern
+
+# Crypto:
+- btc -> altCoin, boomerCoin -> memeCoin/shitCoin -> btc
+- fdv: Fully Diluted Value, total worth or market cap of a cryptocurrency if the entire supply of tokens were in circulation.
+- market cap: total worth of crypto, not including vested token
