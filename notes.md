@@ -28,6 +28,7 @@
 - Add Dashboard
   - Add reset data
   - Maintenance mode
+- Return standard: add status and data/message
 
 # Game
 - Health check

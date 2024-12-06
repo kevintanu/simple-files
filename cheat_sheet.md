@@ -113,6 +113,12 @@ apache:
 - django error will show on that file
 - default user of apache in ubuntu is `www-data` and other usually `nobody` or `apache`, this is important to note because if you use Docker container with Dockerfile using mkdir, the default user of that directory will be `root`, that's why you need to either change the permission on the directory, or change the user
 
+nginx:
+- `/etc/nginx/sites-available` path to nginx site configuration
+- `/var/run/php/phpX.X-fpm.sock` path to php-fpm socket, put into nginx config
+- `sudo nginx -t` test config file
+- `sudo tail -f /var/log/nginx/error.log` check error log of nginx
+
 github:
 - `.github/workflows/FILE_NAME.yml` this is the location of workflow if you want to use github workflow
 
@@ -149,6 +155,9 @@ chrome:
 flask:
 - `flask --app main run --debug` command to run flask app
 
+PHP:
+- `php -m` check enabled extensions
+
 laravel:
 - `php artisan make:migration create_users_table` to generate migration
 - `php artisan migrate:rollback --step=1` to rollback with step
@@ -179,7 +188,13 @@ Ubuntu / WSL:
 - `sudo apt upgrade` to upgrade the local packages (major version only)
 - `sudo apt autoremove` removes unused orphaned packages. use `--dry-run` to check first
 - `sudo apt clean` removes old cached files. use `--dry-run` to check first
+- `cat /etc/os-release` check what distro of linux
 - `cd /mnt/c` access drive c
+- `apt-cache policy PACKAGE_NAME` to check whether package exist or not in package manager
+- `sudo systemctl status SERVICE_NAME` to check status of the service
+- `sudo systemctl start SERVICE_NAME` to start service
+- `sudo systemctl enable SERVICE_NAME` to start automatically on boot
+- `ps aux | grep SERVICE_NAME`
 
 Ansible:
-- `ansible -i inventory.ini gce_servers -m ping` ping to troubleshoot connection
+- `ansible -i inventory.ini YOUR_SERVER_GROUPS -m ping` ping to troubleshoot connection
