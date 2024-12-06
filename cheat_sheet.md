@@ -52,6 +52,7 @@ SSH:
 - public key: a key text that is needed to be put on remote server
 - private key: a key text that is on local machine, and ONLY you should have it, to authenticate to server.
 - use `ed25519` encryption as it's the latest tech
+- `ssh-keygen -t ed25519 -f FILE_NAME -C "your_email@example.com"` command to generate ssh pair key
 
 bash:
 - `top` to see CPU and RAM usage
@@ -171,3 +172,14 @@ LIMIT limit
 
 Windows:
 - `alt-space Move` restore windows off screen
+
+Ubuntu / WSL:
+- `wsl --list --verbose` check installed, status, and version of wsl in windows
+- `sudo apt update` to update the local packages list
+- `sudo apt upgrade` to upgrade the local packages (major version only)
+- `sudo apt autoremove` removes unused orphaned packages. use `--dry-run` to check first
+- `sudo apt clean` removes old cached files. use `--dry-run` to check first
+- `cd /mnt/c` access drive c
+
+Ansible:
+- `ansible -i inventory.ini gce_servers -m ping` ping to troubleshoot connection
