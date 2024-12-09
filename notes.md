@@ -30,6 +30,11 @@
   - Maintenance mode
 - Return standard: add status and data/message
 
+# SSL
+- put your domain on Cloudflare to get free SSL certificate (gain lock icon on browser), and free DDOS protection
+- use Let's encrypt set your server reverse proxy. This will make sure user doesn't see that we are using Let's encrypt cert, also create secure connection between cloudflare and your server
+- try to get Full Strict. means you get prevention on MITM attack, can't be eavesdropped. You need to manage let's encrypt or get Certificate from Cloudflare by yourself (technically Cloudflare itself can decrypt it).
+
 # Game
 - Health check
 - Add server git commit check
@@ -56,3 +61,4 @@
 - btc -> altCoin, boomerCoin -> memeCoin/shitCoin -> btc
 - fdv: Fully Diluted Value, total worth or market cap of a cryptocurrency if the entire supply of tokens were in circulation.
 - market cap: total worth of crypto, not including vested token
+- always look at market cap, not coin value

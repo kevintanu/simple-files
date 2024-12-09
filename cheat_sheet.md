@@ -118,9 +118,14 @@ nginx:
 - `/var/run/php/phpX.X-fpm.sock` path to php-fpm socket, put into nginx config
 - `sudo nginx -t` test config file
 - `sudo tail -f /var/log/nginx/error.log` check error log of nginx
+- `sudo ln -s /etc/nginx/sites-available/example.com /etc/nginx/sites-enabled/` link sites enabled to sites available so nginx will recognize it
+- nginx must be able to see the directory to be able to serve it, so move it to `/var/www/html` and chmod and chown
+- `sudo chown -R www-data:www-data DIRECTORY_NAME` change owner of directory
+- `sudo chmod -R 755 DIRECTORY_NAME` change permission of directory
 
 github:
 - `.github/workflows/FILE_NAME.yml` this is the location of workflow if you want to use github workflow
+- to clone github projects using ssh, first you need to create SSH pair, and put the public key to github. Then put your private key in .ssh/id_ed25519, it will automatically be picked by github to use as private key to authenticate SSH
 
 gcloud:
 - Google Cloud Run use docker container, that means it supports older runtime such as Python 2.7
