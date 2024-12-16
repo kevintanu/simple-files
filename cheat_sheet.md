@@ -166,6 +166,9 @@ PHP:
 laravel:
 - `php artisan make:migration create_users_table` to generate migration
 - `php artisan migrate:rollback --step=1` to rollback with step
+- `php artisan config:cache` deployment, cache the config
+- `php artisan route:cache` deployment, cache the route
+- `php artisan view:cache` deployment, cache the view
 
 redis:
 - `EXPIRE key seconds` to set expiration of keys
