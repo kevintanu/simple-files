@@ -62,3 +62,9 @@
 - fdv: Fully Diluted Value, total worth or market cap of a cryptocurrency if the entire supply of tokens were in circulation.
 - market cap: total worth of crypto, not including vested token
 - always look at market cap, not coin value
+
+# Website:
+- if using google ads, try using google tag manager for tracking, google analytics conversion is buggy as hell
+
+# Python:
+- install pyenv for version management, Anaconda only for Jupyter, to avoid error on pyinstaller

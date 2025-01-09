@@ -14,3 +14,22 @@
   - `docker build --build-arg GIT_COMMIT=$(git rev-parse HEAD) -t project-name .`
   - `docker tag project-name:latest 1234.dkr.ecr.ap-southeast-1.amazonaws.com/project-name:latest`
   - `docker push 1234.dkr.ecr.ap-southeast-1.amazonaws.com/project-name:latest`
+
+## Public access to S3
+```
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Sid": "Statement1",
+			"Principal": "*",
+			"Effect": "Allow",
+			"Action": [
+				"s3:GetObject"
+			],
+			"Resource": [
+				"arn:aws:s3:::your.domain.name/*"
+			]
+		}
+	]
+}``````

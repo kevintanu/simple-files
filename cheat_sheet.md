@@ -48,6 +48,9 @@ node:
 - `npm install git+https://github.com/USERNAME/REPO_NAME.git#HASH` install from git
 - `npm list -g --depth=0` list installed global packages
 
+yarn:
+- `yarn global list` to list all installed global packages
+
 SSH:
 - public key: a key text that is needed to be put on remote server
 - private key: a key text that is on local machine, and ONLY you should have it, to authenticate to server.
@@ -203,6 +206,7 @@ Ubuntu / WSL:
 - `sudo systemctl start SERVICE_NAME` to start service
 - `sudo systemctl enable SERVICE_NAME` to start automatically on boot
 - `ps aux | grep SERVICE_NAME`
+- `sudo apt install build-essential` to be able to build binaries
 
 Ansible:
 - `ansible -i inventory.ini YOUR_SERVER_GROUPS -m ping` ping to troubleshoot connection
