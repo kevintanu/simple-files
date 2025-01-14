@@ -23,3 +23,8 @@ https://stackoverflow.com/questions/64088046/missing-lib-file-when-creating-shar
 
 - attempting to reference a deleted function / (declared implicitly) cannot be referenced -- it is a deleted function
   - you make a constructor, but by the nature of constructor, it has to be copied. one of the member of your class have a deleted copy function, so it can't be copied. Which implicitly also delete the class copy function
+
+## Next Js
+- TypeError: The "payload" argument must be of type object. Received null
+
+next js is trying to pretty print error log, which creates another hard to fix bug

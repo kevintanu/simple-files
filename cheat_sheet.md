@@ -210,3 +210,13 @@ Ubuntu / WSL:
 
 Ansible:
 - `ansible -i inventory.ini YOUR_SERVER_GROUPS -m ping` ping to troubleshoot connection
+
+firebase cli:
+- `firebase logout` & `firebase login`
+- `firebase login:add` to add multiple accounts
+- `firebase login:use` to select specific account
+- `firebase project:list` list projects
+- `firebase use`
+- `firebase init` initialize the current directory
+- `firebase emulators:start` start the emulator
+- `firebase deploy --only firestore:rules,firestore:indexes` deploy rules and indexes
