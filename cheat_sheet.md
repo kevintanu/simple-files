@@ -10,6 +10,9 @@ git:
   - `git submodule add -b BRANCH_NAME https://github.com/username/repo.git path/to/submodule` this is how to add submodule and use specific branch
   - `git submodule update --init --recursive` to Initialize and fetch the contents of the submodule
 - `git show HEAD` to show current HEAD status
+- `git fetch origin branchname:branchname` fetch and update without checkout
+- `git config --get user.name` check logged in username
+- `git config --get user.email` check logged in email
 
 vcpkg:
 - `vcpkg new --application` to initialize
@@ -220,3 +223,6 @@ firebase cli:
 - `firebase init` initialize the current directory
 - `firebase emulators:start` start the emulator
 - `firebase deploy --only firestore:rules,firestore:indexes` deploy rules and indexes
+
+gsutils:
+- `gsutil cors set cors.json gs:<project>.appspot.com` to disable cors for the bucket

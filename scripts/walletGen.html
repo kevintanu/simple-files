@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet Generator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col text-center">
+                <button id="generateWallet" class="btn btn-primary">Generate Wallet</button>
+                <div class="mt-3">
+                    <p id="privateKey" class="text-monospace"></p>
+                    <p id="publicKey" class="text-monospace"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('generateWallet').addEventListener('click', function() {
+            const web3 = new Web3();
+            const account = web3.eth.accounts.create();
+            document.getElementById('privateKey').textContent = 'Private Key: ' + account.privateKey;
+            document.getElementById('publicKey').textContent = 'Public Key: ' + account.address;
+        });
+    </script>
+</body>
+</html>
