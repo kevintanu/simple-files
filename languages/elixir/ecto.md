@@ -15,7 +15,7 @@ end
 - ensure Ecto started in App Supervision Tree
 - `config :friends, ecto_repos: [Friends.Repo]`
 - `mix ecto.create` to create db
-- `mix ecto.gen.migration create_people`
+- `mix ecto.gen.migration create_product_categories`
 - `mix ecto.migrate`
 ```
 defmodule Friends.Person do
@@ -35,3 +35,13 @@ end
 - `Friends.Person |> Friends.Repo.get(1)` fetch based on id
 - `Friends.Person |> Friends.Repo.get_by(first_name: "Ryan")` fetch one based on attr
 - `Friends.Person |> Ecto.Query.where(last_name: "Smith") |> Friends.Repo.all` filter
+
+## Changeset
+
+- filtering, casting, validation
+
+
+## Associations
+
+- `belongs_to` `has_many` `has_one` `:through` `many_to_many`
+- The advantage of using `cast_assoc/3` is that Ecto is able to do all of the hard work of keeping the entries associated. auto update, insert, or delete
