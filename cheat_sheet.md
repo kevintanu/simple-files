@@ -162,6 +162,7 @@ bitnami:
   - `sudo /opt/bitnami/ctlscript.sh restart service name` restart service
   - `sudo /opt/bitnami/ctlscript.sh stop` stop all service
   - `sudo /opt/bitnami/ctlscript.sh restart` restart all service
+- `sudo cat /home/bitnami/bitnami_credentials` Get credentials
 
 chrome:
 - `chrome://inspect/#devices` link to open device inspector in browser
