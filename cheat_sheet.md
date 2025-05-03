@@ -13,6 +13,7 @@ git:
 - `git fetch origin branchname:branchname` fetch and update without checkout
 - `git config --get user.name` check logged in username
 - `git config --get user.email` check logged in email
+  4. `git remote set-url {remote_name} {new_url}` to set new remote
 
 vcpkg:
 - `vcpkg new --application` to initialize
@@ -95,6 +96,8 @@ bash:
 - remote copy
   - `scp username@source_host:/path/to/source_file target_directory/` copy source from remote host to local
   - `scp source_file username@target_host:/path/to/target_directory/` copy local file to remote
+- `which cmd` check if cmd exist
+- `mkdir -p /parent/child` -p = parents, create parent directory if not exist, no error if exist
 
 cmd:
 - `dir /a /s` list all files and directories, include hidden files, recursive
@@ -180,6 +183,7 @@ redis:
 - `EXPIRE key seconds` to set expiration of keys
 - `GET SET TYPE TTL DEL` simple operations
 - `redis-cli -h ADDRESS -p PORT`
+- `redis-cli CONFIG GET dir` find the config file
 
 SQL:
 - example LEFT JOIN query
@@ -192,6 +196,7 @@ WHERE table1.id = table2.id
 ORDER BY table.field ASC/DESC
 LIMIT limit
 ```
+- `mysql -u root -p` login to root prompt password
 
 Windows:
 - `alt-space Move` restore windows off screen
@@ -210,6 +215,7 @@ Ubuntu / WSL:
 - `sudo systemctl enable SERVICE_NAME` to start automatically on boot
 - `ps aux | grep SERVICE_NAME`
 - `sudo apt install build-essential` to be able to build binaries
+- `sudo su` become superuser
 
 Ansible:
 - `ansible -i inventory.ini YOUR_SERVER_GROUPS -m ping` ping to troubleshoot connection
@@ -226,3 +232,8 @@ firebase cli:
 
 gsutils:
 - `gsutil cors set cors.json gs:<project>.appspot.com` to disable cors for the bucket
+
+vscode:
+- `src="([^"]+)"` `src="{{ assetPath "$1" }}"` find and replace with regex
+
+<!-- ([^"]+) --> {/* $1 */}
