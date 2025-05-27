@@ -13,6 +13,8 @@ git:
 - `git fetch origin branchname:branchname` fetch and update without checkout
 - `git config --get user.name` check logged in username
 - `git config --get user.email` check logged in email
+- `git config --global --unset user.name` unset user name
+- `git config --list --local`
   4. `git remote set-url {remote_name} {new_url}` to set new remote
 
 vcpkg:
